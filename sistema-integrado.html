@@ -1010,7 +1010,7 @@ function abrirEditarSistema(sid){
 
 function verificarSenhaEdicao(sid){
   const senha=document.getElementById('edit-senha')?.value||'';
-  if(senha!=='iaefinanceiro2026'){
+  if(senha!=='fin360graus2026'){
     const inp=document.getElementById('edit-senha');
     const err=document.getElementById('edit-senha-err');
     if(inp){ inp.style.borderColor='var(--danger)'; inp.style.background='var(--danger-b)'; inp.value=''; inp.focus(); }
@@ -2085,7 +2085,7 @@ function confirmarPagamento(id){
 
 function executarPagamento(id){
   const senha=document.getElementById('cfp-senha')?.value||'';
-  if(senha!=='iaefinanceiro2026'){
+  if(senha!=='fin360graus2026'){
     const e=document.getElementById('cfp-erro');
     if(e){ e.style.display='block'; document.getElementById('cfp-senha').select(); }
     return;
@@ -3834,7 +3834,7 @@ async function authSignup(){
     let companyId;
     if(modo==='criar'){
       const acessoCod=document.getElementById('signup-acesso-cod')?.value||'';
-      if(acessoCod!=='iaefinanceiro2026'){ authSetLoading('signup-btn',false); authShowError('signup','Código de acesso IAê inválido. Solicite ao seu consultor.'); return; }
+      if(acessoCod!=='fin360graus2026'){ authSetLoading('signup-btn',false); authShowError('signup','Código de acesso IAê inválido. Solicite ao seu consultor.'); return; }
       const empNome=document.getElementById('signup-empresa-nome').value.trim();
       if(!empNome){ authSetLoading('signup-btn',false); authShowError('signup','Informe o nome da empresa.'); return; }
       const code=Math.random().toString(36).slice(2,8).toUpperCase();
